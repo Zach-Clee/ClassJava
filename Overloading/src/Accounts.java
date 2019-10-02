@@ -1,6 +1,6 @@
 
 public class Accounts {
-	private int test = 0;;
+	private int test = 0;
 	public Accounts() {
 		System.out.println("Your basic tax is + " + 21);
 		test = 1;
