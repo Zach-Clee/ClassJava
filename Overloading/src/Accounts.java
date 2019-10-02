@@ -1,10 +1,17 @@
 
 public class Accounts {
-	public void Tax() {
+	private int test = 0;;
+	public Accounts() {
 		System.out.println("Your basic tax is + " + 21);
+		test = 1;
+		System.out.println(test);
 	}
-	public void Tax(int Salary) {
+	public Accounts(int Salary) {
 		float T= (float) Salary * 21 / 100;
 		System.out.println("You Tax is : " + T);
+	}
+	
+	public void echo() {
+		System.out.println("Ah. So you find yourself here.");
 	}
 }

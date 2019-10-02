@@ -4,6 +4,7 @@ class start {
 		System.out.println("echo");
 		
 		Accounts AC = new Accounts();
-		AC.Tax(2000);
+		
+		AC.echo();
 	}
 }
