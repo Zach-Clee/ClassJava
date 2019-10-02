@@ -6,4 +6,9 @@ public class Other {
 		test = 10;
 		System.out.println("reAh. So you find yourself he." + test);
 	}
+	
+	public void that() {
+		test = 10;
+		System.out.println(">>reAh. So you find yourself he." + test);
+	}
 }
