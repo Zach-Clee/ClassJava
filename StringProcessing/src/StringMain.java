@@ -6,7 +6,8 @@ public class StringMain {
 		//str.wordCount("Hello my friends");
 		//str.PrintVertical2("Hello my friends");
 		//str.reverseVertical("Hello my friends");
-		str.find("hello LondonLondon, I am going to London", "London");
+		//str.find("hello LondonLondon, I am going to London", "London");
+		str.countTheWords("Hello my friend how are yoooooooou"); 
 	}
 	
 }
@@ -88,6 +89,30 @@ class StringProcessing {
 			}
 		}
 		System.out.println(lookfor + " appears " + count + " times.");
+	}
+	
+	
+	public void countTheWords(String msg) {
+		
+		String alpha = "";
+		String word = "";
+		int longestwordValue = 0;
+
+		for (int i = 0; i <= msg.length() -1; i++) {
+			alpha = msg.substring(i, i + 1);
+			if (alpha.equals(" ")) {
+				if (word.length() > longestwordValue) {
+					longestwordValue=word.length();
+				}
+				word = "";
+			} else {
+				word += alpha;
+			}
+		}
+		if (word.length() > longestwordValue) {
+			longestwordValue=word.length();
+		}
+		System.out.println("Longest word is : " + longestwordValue);
 	}
 	
 }

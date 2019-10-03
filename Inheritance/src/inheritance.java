@@ -13,15 +13,19 @@ public class inheritance {
 		ChangeThis.ChangeThis();
 		BankOverride.CantOverrideThisMessage();
 		
-		
+		//------------------------------------------------------//		
 		Parent1 x;
 		x = new Child1();
 		
 		x.ParentMessage();
+		//------------------------------------------------------//
 		
-		
-		
-		String qwer= "hellothere";
-		System.out.println(qwer.substring(2, 4));
+		MyMath Ref = new MyMath();
+		doMath(Ref);
+	}
+	
+	public static void doMath(Math56 M) {
+		M.Add(5, 7);
+		M.Sub(6, 2);
 	}
 }
