@@ -1,13 +1,24 @@
 public class inheritance {
 	public static void main (String[] args){
-		System.out.println("hello");
 		
-		Other f = new Other();
+		Bank thisIsBank = new Bank();
+		HSBC BankOverride = new HSBC();
+		CallOnAbstract ChangeThis = new CallOnAbstract();
 		
-		One x = new One();
-		x.echo();
-		x.hello();
-		x.that();
+		
+		//this calls a procedure 
+		thisIsBank.message();
+		thisIsBank.CantOverrideThisMessage();
+		BankOverride.message();
+		ChangeThis.ChangeThis();
+		BankOverride.CantOverrideThisMessage();
+		
+		
+		Parent1 x;
+		x = new Child1();
+		
+		x.ParentMessage();
+		
 		
 		
 		String qwer= "hellothere";

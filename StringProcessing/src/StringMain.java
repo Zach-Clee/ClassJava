@@ -6,7 +6,7 @@ public class StringMain {
 		//str.wordCount("Hello my friends");
 		//str.PrintVertical2("Hello my friends");
 		//str.reverseVertical("Hello my friends");
-		str.find("I am, am going am", "am");
+		str.find("hello LondonLondon, I am going to London", "London");
 	}
 	
 }
@@ -75,24 +75,19 @@ class StringProcessing {
 	}
 	
 	public void find(String msg, String lookfor) {
-		int lookForLength = lookfor.length();
 		int count = 0;
 		String alpha = "";
+		msg = msg.toLowerCase();
+		lookfor = lookfor.toLowerCase();
 		
-		System.out.println("Look for is " + lookForLength);
-		
-		System.out.println("msg is : " + msg.length());
-		
-		
-		for (int i = 0; i <= (msg.length()-lookForLength); i++) {
-			alpha = msg.substring(i, i+ lookForLength);
-			
-		
-		if (alpha.equals(lookfor)){
-			++count;
-		}
-
+		for (int i = 0; i <= (msg.length()-lookfor.length()); i++) {
+			alpha = msg.substring(i, i+ lookfor.length());
+			if (alpha.equals(lookfor)){
+				++count;
+				i += lookfor.length() -1;
+			}
 		}
 		System.out.println(lookfor + " appears " + count + " times.");
 	}
+	
 }
