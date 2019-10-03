@@ -8,5 +8,9 @@ public class inheritance {
 		x.echo();
 		x.hello();
 		x.that();
+		
+		
+		String qwer= "hellothere";
+		System.out.println(qwer.substring(2, 4));
 	}
 }
