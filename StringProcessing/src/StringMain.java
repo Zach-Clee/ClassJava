@@ -5,7 +5,8 @@ public class StringMain {
 		//str.PrintVertical("Hello my friends");
 		//str.wordCount("Hello my friends");
 		//str.PrintVertical2("Hello my friends");
-		str.reverseVertical("Hello my friends");
+		//str.reverseVertical("Hello my friends");
+		str.find("I am, am going am", "am");
 	}
 	
 }
@@ -71,5 +72,27 @@ class StringProcessing {
 			}
 		}
 		System.out.println(word);
+	}
+	
+	public void find(String msg, String lookfor) {
+		int lookForLength = lookfor.length();
+		int count = 0;
+		String alpha = "";
+		
+		System.out.println("Look for is " + lookForLength);
+		
+		System.out.println("msg is : " + msg.length());
+		
+		
+		for (int i = 0; i <= (msg.length()-lookForLength); i++) {
+			alpha = msg.substring(i, i+ lookForLength);
+			
+		
+		if (alpha.equals(lookfor)){
+			++count;
+		}
+
+		}
+		System.out.println(lookfor + " appears " + count + " times.");
 	}
 }
