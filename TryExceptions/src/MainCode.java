@@ -15,5 +15,17 @@ public class MainCode {
 		catch(Exception E){
 			System.out.println("Unforseen error.");
 		}
+		
+		
+		//creating own exception
+		NationwideAccounts ref = new NationwideAccounts();
+		try {
+			ref.NetSalary(2000, 1);
+		}
+		catch (AbsentiseException x) {
+			System.out.println("Too many Absentise");
+		}
+		
+		
 	}
 }
