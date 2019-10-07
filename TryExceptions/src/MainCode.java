@@ -12,5 +12,8 @@ public class MainCode {
 		catch (ArithmeticException E) {
 			System.out.println("Can't divide by 0");
 		}
+		catch(Exception E){
+			System.out.println("Unforseen error.");
+		}
 	}
 }
